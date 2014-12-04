@@ -1,1 +1,12 @@
-Hello World
+---
+
+---
+
+
+what
+
+{% for post in paginator.posts %}  
+    <a href="{{ post.url }}">{{ post.title }}</a>  
+{% endfor %}  
+
+{{ page.content | number_of_words }} => 1337
